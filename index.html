@@ -6,36 +6,39 @@
     <title>Onur Vural - Personal Website</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: #1a1a1a;
+            color: #e6e6e6;
         }
 
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #3c3c3c;
+            color: #b19cd9; /* Elegant purple */
             padding: 1.5em 0;
             text-align: center;
+            border-bottom: 2px solid #4a4a4a;
         }
 
         nav {
-            background-color: #333;
+            background-color: #2e2e2e;
             color: white;
             display: flex;
             justify-content: center;
             gap: 20px;
             padding: 1em 0;
+            border-bottom: 1px solid #4a4a4a;
         }
 
         nav a {
-            color: white;
+            color: #b19cd9;
             text-decoration: none;
             font-size: 1.2em;
         }
 
         nav a:hover {
+            color: #e6e6e6;
             text-decoration: underline;
         }
 
@@ -43,20 +46,23 @@
             padding: 2em;
             margin: 1em auto;
             max-width: 800px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #2b2b2b;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             border-radius: 8px;
         }
 
         section h2 {
-            color: #4CAF50;
+            color: #b19cd9;
+            border-bottom: 1px solid #4a4a4a;
+            padding-bottom: 0.5em;
         }
 
         footer {
             text-align: center;
             padding: 1em;
-            background-color: #333;
-            color: white;
+            background-color: #2e2e2e;
+            color: #b19cd9;
+            border-top: 2px solid #4a4a4a;
         }
 
         .link-list {
@@ -69,14 +75,14 @@
         }
 
         .link-list a {
-            color: #4CAF50;
+            color: #b19cd9;
             text-decoration: none;
         }
 
         .link-list a:hover {
+            color: #e6e6e6;
             text-decoration: underline;
         }
-
     </style>
 </head>
 <body>
@@ -85,12 +91,21 @@
     </header>
 
     <nav>
+        <a href="#links">Links</a>
         <a href="#bio">Bio</a>
         <a href="#projects">Projects</a>
         <a href="#videos">Videos</a>
-        <a href="#news">News</a>
-        <a href="#links">Links</a>
+        <a href="#news">News</a>   
     </nav>
+
+    <section id="links">
+        <h2>Links</h2>
+        <ul class="link-list">
+            <li><a href="https://www.linkedin.com/in/onur-vural-696706220/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://scholar.google.com/citations?user=EdnvHu8AAAAJ&hl=tr" target="_blank">Google Scholar</a></li>
+            <li><a href="https://github.com/OnurVural" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
 
     <section id="bio">
         <h2>About Me</h2>
@@ -100,9 +115,9 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul class="link-list">
-            <li><a href="#">Project 1: Predicting Solar Flares</a></li>
-            <li><a href="#">Project 2: Representation Learning with EXCON</a></li>
-            <li><a href="#">Project 3: Visualization of Extreme Points in Clustering</a></li>
+            <li><a href="https://onurvural.github.io/excon.github.io/">EXCON: Extreme Instance-based Contrastive Representation Learning of Severely Imbalanced Multivariate Time Series for Solar Flare Prediction</a></li>
+            <li><a href="https://onurvural.github.io/contrex.github.io/">Contrastive Representation Learning for Predicting Solar Flares from Extremely Imbalanced Multivariate Time Series Data</a></li>
+            <li><a href="#">Solar Flare Prediction Using Multivariate Time Series of Photospheric Magnetic Field Parameters: A Comparative Analysis of Vector, Time Series, and Graph Data Representations</a></li>
         </ul>
     </section>
 
@@ -119,15 +134,6 @@
         <ul class="link-list">
             <li><a href="#">News Article 1: Research on Solar Flare Prediction</a></li>
             <li><a href="#">News Article 2: EXCON Framework Published</a></li>
-        </ul>
-    </section>
-
-    <section id="links">
-        <h2>Links</h2>
-        <ul class="link-list">
-            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-            <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
-            <li><a href="https://github.com/OnurVural" target="_blank">GitHub</a></li>
         </ul>
     </section>
 
