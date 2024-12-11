@@ -3,32 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
+    <title>Onur Vural - Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f4f4f9;
+            background-color: #f8f9fa;
+            color: #333;
         }
+
         header {
-            background: #4CAF50;
+            background-color: #4CAF50;
             color: white;
-            padding: 1em;
+            padding: 1.5em 0;
+            text-align: center;
         }
-        main {
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
             padding: 2em;
+            margin: 1em auto;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
+
+        section h2 {
+            color: #4CAF50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .link-list li {
+            margin: 0.5em 0;
+        }
+
+        .link-list a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .link-list a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Onur Vural's Website</h1>
+        <h1>Welcome to Onur Vural's Website</h1>
     </header>
-    <main>
-        <h2>Hello, World!</h2>
-        <p>Welcome to my GitHub Pages website. Stay tuned for updates!</p>
-    </main>
+
+    <nav>
+        <a href="#bio">Bio</a>
+        <a href="#projects">Projects</a>
+        <a href="#videos">Videos</a>
+        <a href="#news">News</a>
+        <a href="#links">Links</a>
+    </nav>
+
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>Hello! I am Onur Vural, a Ph.D. student and research assistant specializing in data analytics for solar data, machine learning, and deep learning. Welcome to my personal website where I share updates, projects, and more.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul class="link-list">
+            <li><a href="#">Project 1: Predicting Solar Flares</a></li>
+            <li><a href="#">Project 2: Representation Learning with EXCON</a></li>
+            <li><a href="#">Project 3: Visualization of Extreme Points in Clustering</a></li>
+        </ul>
+    </section>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <ul class="link-list">
+            <li><a href="#">Video 1: Introduction to Solar Data Analytics</a></li>
+            <li><a href="#">Video 2: Machine Learning for Multivariate Time Series</a></li>
+        </ul>
+    </section>
+
+    <section id="news">
+        <h2>News</h2>
+        <ul class="link-list">
+            <li><a href="#">News Article 1: Research on Solar Flare Prediction</a></li>
+            <li><a href="#">News Article 2: EXCON Framework Published</a></li>
+        </ul>
+    </section>
+
+    <section id="links">
+        <h2>Links</h2>
+        <ul class="link-list">
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
+            <li><a href="https://github.com/OnurVural" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Onur Vural | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
