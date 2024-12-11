@@ -105,6 +105,32 @@
         a {
             transition: color 0.3s ease;
         }
+
+        /* Custom styles for projects, videos, and news */
+        #projects a, #videos a, #news a {
+            color: #f5a623; /* Example color for project, video, and news links */
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        #projects a:hover, #videos a:hover, #news a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Styling for the sections (to ensure each item is on a new line) */
+        #projects ul, #videos ul, #news ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #projects li, #videos li, #news li {
+            margin-bottom: 1em; /* Space between each item */
+        }
+
+        #projects a, #videos a, #news a {
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
@@ -157,7 +183,7 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul class="link-list">
+        <ul>
             <li><a href="https://onurvural.github.io/excon.github.io/">EXCON: Extreme Instance-based Contrastive Representation Learning of Severely Imbalanced Multivariate Time Series for Solar Flare Prediction</a></li>
             <li><a href="https://onurvural.github.io/contrex.github.io/">Contrastive Representation Learning for Predicting Solar Flares from Extremely Imbalanced Multivariate Time Series Data</a></li>
             <li><a href="#">Solar Flare Prediction Using Multivariate Time Series of Photospheric Magnetic Field Parameters: A Comparative Analysis of Vector, Time Series, and Graph Data Representations</a></li>
@@ -166,7 +192,7 @@
 
     <section id="videos">
         <h2>Videos</h2>
-        <ul class="link-list">
+        <ul>
             <li><a href="https://www.youtube.com/watch?v=LTcjvzMj1a8">Video 1: Introduction to Solar Data Analytics</a></li>
             <li><a href="#">Video 2: Machine Learning for Multivariate Time Series</a></li>
         </ul>
@@ -174,7 +200,7 @@
 
     <section id="news">
         <h2>News</h2>
-        <ul class="link-list">
+        <ul>
             <li><a href="https://www.usu.edu/today/story/here-comes-the-sun-usu-computer-scientists-develop-models-to-predict-extreme-solar-phenomena/">News Article: Research on Solar Flare Prediction</a></li>
             <li><a href="https://www.linkedin.com/in/onur-vural-696706220/recent-activity/all/">LinkedIn Activities</a></li>
         </ul>
@@ -185,7 +211,5 @@
     </footer>
 </body>
 </html>
-
-
 
 
